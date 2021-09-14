@@ -13,7 +13,7 @@ class poststableseeder extends Seeder
     public function run()
     {
         for($i = 0 ;$i < 10; $i++){
-            $newpost = new post();
+            $newpost = new Post();
             $newpost->title = 'post numero' . ($i + 1);
             $newpost->slug = Str::slug( $newpost->title,'-');
             $newpost->content = 'lorem ipsum dolor bla bla bla bla';
